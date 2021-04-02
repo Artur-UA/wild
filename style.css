@@ -25,8 +25,12 @@ html,body{
 	-ms-text-size-adjust: 100%;
 	-moz-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
-
 }
+img{
+	max-width: 100%;
+	height: auto;
+}
+
 input,button,textarea{font-family:inherit;}
 
 input::-ms-clear{display: none;}
@@ -129,6 +133,84 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	max-width: 274px;
 	margin-bottom: 50px;
 }
+
 .main__button{
-	color: orange;
+	padding: 17px 42px;
+	background: #CD6326;
+	border-radius: 5px;
+	font-size: 23px;
+	line-height: 27px;
+	text-align: center;
+	color: #F7F7F7;
+}
+.main__button:active, .main__button:focus, .main__button:hover, .header__link__sign:active, .header__link__sign:focus, .header__link__sign:hover {
+	opacity: .75;
+	/* background: #6e3616; */
+}
+
+.header__link__sign{
+	padding: 10px 23px;
+	border: 2px solid #CD6326;
+	box-sizing: border-box;
+	border-radius: 5px;
+}
+
+.latest__articles{
+	padding-bottom: 760px;
+	background: #CCCCCC;
+}
+
+.latest__articles__title{
+	font-size: 48px;
+	line-height: 72px;
+	text-align: center;
+	padding: 120px 558px 0 558px;
+	color: #333333;
+}
+.latest_articles__subtitle{
+	padding-top: 20px;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	color: #666666;
+	padding-bottom: 120px;
+}
+
+.card{
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 60px;
+	margin: 0 auto;
+}
+.card__pic{
+	width: 300px;
+	height: 360px;
+	margin: 0 auto;
+	text-align: center;
+}
+.card__title{
+	font-size: 22px;
+	line-height: 36px;
+	text-align: center;
+	color: #F7F7F7;
+	padding-top: 247px;
+	text-align: center;
+}
+.card_subtitle{
+	padding-top: 10px;
+	font-size: 17px;
+	line-height: 27px;
+	text-align: center;
+	color: #F7F7F7;
+	text-align: center;
+}
+.deer{
+	background: url(./img/deer.png) no-repeat center;
+}
+.squirrel{
+	background: url(./img/squirrel.png) no-repeat center;
+}
+.bird{
+	background: url(./img/bird.jpg) no-repeat center;
 }
